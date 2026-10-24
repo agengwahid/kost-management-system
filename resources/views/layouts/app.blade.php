@@ -44,15 +44,6 @@
                     <i data-lucide="phone" class="w-3.5 h-3.5 text-emerald-400"></i>
                     <span class="font-medium">WhatsApp: +{{ $setting->phone_wa ?? '6281234567890' }}</span>
                 </a>
-
-                {{-- Tampilkan tombol admin HANYA jika pengelola sedang login --}}
-                @auth
-                <span class="text-stone-600 hidden sm:inline">|</span>
-                <a href="{{ route('admin.dashboard') }}" class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 hover:bg-emerald-500/30 text-[11px] font-semibold transition flex items-center gap-1">
-                    <i data-lucide="shield-check" class="w-3 h-3"></i>
-                    <span>Masuk Dashboard</span>
-                </a>
-                @endauth
             </div>
         </div>
     </div>
@@ -86,15 +77,8 @@
                     <a href="#aturan" class="hover:text-stone-900 transition-colors">Tata Tertib</a>
                 </nav>
 
-                <!-- Action Button & Auth Badge -->
+                <!-- Action Button -->
                 <div class="hidden md:flex items-center gap-4">
-                    @auth
-                    <a href="{{ route('admin.dashboard') }}" class="text-xs font-semibold text-emerald-800 bg-emerald-50 px-3 py-1.5 rounded-lg border border-emerald-200 hover:bg-emerald-100 transition flex items-center gap-1.5">
-                        <i data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i>
-                        <span>Panel Admin</span>
-                    </a>
-                    @endauth
-
                     <a href="#survey" class="px-5 py-2.5 rounded-xl bg-[#0F2920] hover:bg-[#163B2F] text-white text-xs font-semibold tracking-wide shadow-sm hover:shadow transition flex items-center gap-2">
                         <i data-lucide="calendar" class="w-3.5 h-3.5 text-amber-200"></i>
                         <span>Jadwalkan Survey</span>
@@ -119,15 +103,6 @@
                 <a href="#galeri" class="mobile-nav-link hover:text-stone-900 py-1">Galeri Foto</a>
                 <a href="#lokasi" class="mobile-nav-link hover:text-stone-900 py-1">Lokasi & Akses Sekitar</a>
                 <a href="#aturan" class="mobile-nav-link hover:text-stone-900 py-1">Tata Tertib Kost</a>
-
-                @auth
-                <div class="pt-2">
-                    <a href="{{ route('admin.dashboard') }}" class="mobile-nav-link w-full py-2.5 px-3 rounded-lg bg-emerald-50 text-emerald-800 text-xs font-semibold flex items-center justify-center gap-2 border border-emerald-200">
-                        <i data-lucide="layout-dashboard" class="w-4 h-4"></i>
-                        <span>Ke Dashboard Admin</span>
-                    </a>
-                </div>
-                @endauth
 
                 <div class="pt-4 border-t border-stone-200 flex flex-col gap-2.5">
                     <a href="#survey" class="mobile-nav-link w-full py-3 text-center rounded-xl bg-[#0F2920] text-white text-xs font-semibold tracking-wide shadow-sm">
