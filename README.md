@@ -42,8 +42,8 @@
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/agengwahid/kost-senopati-residence.git
-cd kost-senopati-residence
+git clone https://github.com/agengwahid/kost-management-system.git
+cd kost-management-system
 ```
 
 ### 2. Install Dependencies
