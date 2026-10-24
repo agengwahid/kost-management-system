@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-serif: 'Playfair Display', Georgia, Cambria, 'Times New Roman', serif;
+    --color-pine-950: #071712;
+    --color-pine-900: #0b241c;
+    --color-pine-800: #12362b;
+    --color-pine-700: #19483a;
+    --color-pine-600: #215c4b;
+    --color-pine-500: #2d7862;
+    --color-pine-100: #e2ede8;
+    --color-pine-50: #f2f7f4;
+    --color-sand-50: #fbf9f6;
+    --color-sand-100: #f4efe6;
+    --color-sand-200: #e8ded2;
+    --color-sand-300: #d6c5b0;
+    --color-gold-500: #b8915b;
+    --color-gold-600: #9e7845;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Bespoke subtle patterns */
+.editorial-hero-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+
